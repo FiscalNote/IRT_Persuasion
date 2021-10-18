@@ -2,11 +2,12 @@ import os
 
 import pandas as pd
 
-BASE_PATH = '/home/ec2-user/final_paper_data_v2/debates/'
+BASE_PATH = 'data/editorials/'
 
 
 def create_full_data(label_type='bin', feature_types=['style'], base_path=BASE_PATH):
-    
+    """Combine different feature sets with labels"""
+
     vote_data = pd.read_csv(os.path.join(base_path, 'vote_data.csv'))
 
     file = feature_types[0]

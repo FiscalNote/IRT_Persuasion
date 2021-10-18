@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-BASE_PATH = '/home/ec2-user/final_paper_data_v2/debates/'
+BASE_PATH = 'data/debates/'
 
 def create_full_data(label_type='bin', feature_types=['style'], base_path=BASE_PATH):
     
